@@ -147,9 +147,9 @@ nav ul {
     justify-content: space-between
 }
 
-nav ul li {
+/* nav ul li {
     width: 16.2%
-}
+} */
 
 nav ul li a {
     /* background: #fff;
@@ -164,7 +164,7 @@ nav ul li a {
     text-align: center;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
-    padding: 10px 26px;
+    padding: 8px 2rem;
     transition: all 0.3s;
     font-weight: 600
 }
@@ -796,6 +796,10 @@ nav ul li a:hover {
     font-size: 14px;
 }
 
+.copyright p {
+   padding-bottom: 0 !important;
+   margin-bottom: 0 !important;
+}
 
 .site-gallery.expertise-sec .expertise-box p {
     color: #fff;
@@ -903,7 +907,7 @@ nav ul li a:hover {
 }
 
 .expertise-sec .bio-img {
-    max-width: 500px;
+    max-width: 350px;
     margin: 15px auto
 }
 
@@ -1080,6 +1084,36 @@ nav ul li a:hover {
 .why-choose-links a:hover{
     text-decoration: none !important;
 }
+
+.content-right-lam {
+    max-height: calc(100vh - 218px);
+    overflow: auto;
+    padding-right:50px;
+}
+
+/* width */
+.content-right-lam::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .content-right-lam::-webkit-scrollbar-track {
+    background: #3f843b;
+    border-radius: 50px;
+  }
+  
+  /* Handle */
+  .content-right-lam::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 50px;
+    border: 3px solid #3f843b;
+
+  }
+  
+  /* Handle on hover */
+  .content-right-lam::-webkit-scrollbar-thumb:hover {
+    opacity: 0.8;;
+  }
 /* 
 =================================
             MQ
@@ -1093,7 +1127,7 @@ nav ul li a:hover {
 
 @media screen and (max-width:1100px) {
     nav ul li a {
-        padding: 10px 22px;
+        padding: 10px 1.8rem;
     }
 }
 
@@ -1185,6 +1219,9 @@ nav ul li a:hover {
 
     .home-content .content-right {
         width: calc(100% - 0px);
+    }
+    .home-content .content-right-lam {
+        padding-right:0;
     }
 
     .home-content {
@@ -1322,6 +1359,10 @@ nav ul li a:hover {
 
     .logo-sec a {
         font-size: 16px;
+    }
+
+    .home-content h2 {
+        font-size: 18px;
     }
 }
 
